@@ -457,6 +457,7 @@ body {
     box-sizing: border-box;
     padding: 0 25px;
     overflow: hidden;
+    padding-bottom: 25px;
 }
 
 
@@ -537,6 +538,7 @@ body {
     z-index: 2;
     background-color: rgba(0,0,0,.6);
     cursor: pointer;
+    border-radius: 2px;
 }
 
 .carousel-button> div:nth-child(2) i {
@@ -557,6 +559,7 @@ body {
     z-index: 2;
     background-color: rgba(0,0,0,.6);
     cursor: pointer;
+    border-radius: 2px;
 }
 
 .carousel-button> div:nth-child(3) i {
@@ -581,6 +584,11 @@ body {
     background-color: white;
     opacity: .2;
     cursor: pointer;
+}
+
+.carousel-button > ul li:nth-child(3) {
+    background-color: #02bc01;
+    opacity: 1;
 }
 
 .carousel-button > ul li:nth-child(4) {
@@ -896,4 +904,555 @@ body {
 
 .watching-right-bottom a:hover p:nth-child(1) {
     color: #09bb07;
+}
+
+/* 综艺选秀栏 */
+
+.show .container {
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #333333;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
+
+.show-title {
+    height: 62px;
+}
+
+.show-title span {
+    font-size: 18px;
+    color: #b2b2b2;
+    line-height: 62px;
+}
+
+.show-title span i {
+    font-size: 26px;
+    color: #09bb07;
+    margin-right: 10px;
+}
+
+
+.show-title a:nth-child(2) {
+    float: right;
+    margin-top: 30px;
+    color: #666666;
+    font-size: 13px;
+}
+
+.show-title a:nth-child(2):hover {
+    color: #02bc01;
+}
+
+.show-title a:nth-child(2) i {
+    font-size: 13px;
+}
+
+.show-middle-left {
+    float: left;
+    position: relative;
+}
+
+.show-middle-left a {
+    display: block;
+}
+
+.show-middle-left img{
+    width: 455px;
+    height: 273px;
+}
+
+.show-middle-left span {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 30px 0px 20px 0px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.5));
+}
+
+.show-middle-left .carousel-button div:nth-last-child(-n+2) {
+    background-color: rgba(0,0,0,.6);
+}
+
+.show-middle-left .carousel-button li {
+    background-color: #09bb07;
+    opacity: 1;
+    margin-right: 0px;
+}
+
+.show-middle-left .carousel-button ul {
+    width: 18px;
+    top: 254px;
+    left: calc(455px / 2);
+    margin-left: -9px;
+}
+
+.show-middle-right {
+    float: right;
+    width: calc(1170px - 505px);
+}
+
+.show-middle-right li {
+    float: left;
+    width: 201px;
+    height: 127px;
+    background-color: thistle;
+    margin-left: 20px;
+}
+
+.show-middle-right li a {
+    display: block;
+    position: relative;
+}
+
+.show-middle-right li:nth-last-child(-n+3) {
+    margin-top: 19px;
+}
+
+.show-middle-right img {
+    width: 201px;
+    height: 127px;
+}
+
+.show-middle-right span:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 8px 0px;
+    text-align: center;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.5));
+    color: white;
+}
+
+.show-middle-play {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 127px;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.show-middle-right a:hover .show-middle-play {
+    display: block;
+}
+
+.show-middle-right span:nth-child(4) {
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    padding: 3px 5px;
+    padding-bottom: 2px;
+    color: white;
+    background-color: #09bb07;
+    z-index: 3;
+}
+
+.show-middle-right span:nth-child(4):before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 1px;
+    display: block;
+    border-right: 4px solid #09bb07;
+    border-bottom: 4px solid transparent;
+}
+
+.show-bottom {
+    margin-top: 20px;
+}
+
+.show-bottom li {
+    float: left;
+    margin-right: 20px;
+}
+
+.show-bottom li:nth-child(6n) {
+    margin-right: 0px;
+}
+
+.show-bottom a {
+    display: block;
+    width: 169px;
+    height: 42px;
+    box-sizing: border-box;
+    color: #b2b2b2;
+    line-height: 42px;
+    font-size: 14px;
+    border-top:1px dashed #2b2a2a;;
+}
+
+.show-bottom a i {
+    float: right;
+    font-size: 12px;
+    color: #666666;
+}
+
+.show-bottom a:hover {
+    color: #09bb07;
+}
+
+/* 动漫 */
+
+.cartoon .container {
+    margin-top: 20px;
+    background-color: #333333;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 0 25px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.cartoon-title span:nth-child(1) {
+    float: left;
+    height: 62px;
+    line-height: 62px;
+    color: #b2b2b2;
+    font-size: 17px;
+}
+
+.cartoon-title span:nth-child(1) i {
+    color: #02bc01;
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.cartoon-title a:nth-child(2) {
+    float: right;
+    margin-top: 30px;
+    color: #666666;
+    font-size: 13px;
+}
+
+.cartoon-title a:nth-child(2):hover {
+    color: #02bc01;
+}
+
+.cartoon-title a:nth-child(2) i {
+    font-size: 13px;
+}
+
+.cartoon-left {
+    float: left;
+    width: 455px;
+}
+
+.cartoon-left-carousel {
+    position: relative;
+}
+
+.cartoon-left-carousel img {
+    width: 455px;
+    height: 273px;
+}
+
+.cartoon-left-carousel > ul span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    bottom: 0px;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+    color: white;
+    line-height: 20px;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.5));
+}
+
+
+
+/* 在追部分排行榜 */
+
+.cartoon-left-ranking {
+    margin-top: 20px;
+}
+.cartoon-left-rankingtitle {
+    margin-bottom: 15px;
+}
+
+.cartoon-left-rankingtitle span:nth-child(1) {
+    float: left;
+    line-height: 1em;
+    color: #b2b2b2;
+    font-size: 18px;
+}
+
+.cartoon-left-rankingtitle span:nth-child(1) i {
+    color: #02bc01;
+    font-size: 22px;
+    vertical-align: bottom;
+    margin-right: 1px;
+}
+
+.cartoon-left-rankingtitle a:nth-child(2) {
+    float: right;
+    line-height: 20px;
+    color: #666666;
+    font-size: 13px;
+}
+
+.cartoon-left-rankingtitle a:nth-child(2):hover {
+    color: #02bc01;
+}
+
+.cartoon-left-rankingtitle a:nth-child(2) i {
+    font-size: 13px;
+}
+
+
+.cartoon-left-rankingleft {
+    float: left;
+    width: 178px;
+}
+
+.cartoon-left-rankingleft a {
+    display: block;
+    position: relative;
+}
+
+.cartoon-left-rankingleft img {
+    width: 177px;
+    height: 266px;
+}
+
+.cartoon-left-rankingleft >a >div {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 266px;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cartoon-left-rankingleft > a:hover div {
+    display: block;
+}
+
+.cartoon-left-rankingleft > a > span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.5));
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.cartoon-left-rankingright {
+    float: right;
+    width: 257px;
+}
+
+.cartoon-left-rankingright li {
+    margin-bottom: 10px;
+}
+
+.cartoon-left-rankingright li > span {
+    float: right;
+    color: #09bb07;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.cartoon-left-rankingright li:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.cartoon-left-rankingright a {
+    line-height: 20px;
+
+    color: #b2b2b2;
+}
+
+.cartoon-left-rankingright a span {
+    background-color: #09bb07;
+    color: white;
+    padding: 2px 5px;
+    margin-right: 10px;
+}
+
+.cartoon-left-rankingright li:nth-last-child(-n+5) a span {
+    background-color: #444444;
+    color: #b2b2b2;
+}
+
+.cartoon-left-rankingright li:nth-last-child(-n+5) a:hover span {
+    color: #09bb07;
+}
+
+.cartoon-left-rankingright a:hover {
+    color: #09bb07;
+}
+
+.cartoon-right {
+    float: right;
+    width: 665px;
+}
+
+
+.cartoon-right-top li {
+    float: left;
+    width: 146px;
+    height: 286px;
+    /* background-color: #09bb07; */
+    margin-left: 20px;
+}
+
+.cartoon-right-top a:nth-child(1) {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cartoon-right-top img {
+    width: 146px;
+    height: 219px;
+}
+
+.cartoon-right-top a:nth-child(1):before {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 219px;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cartoon-right-top a:nth-child(1):hover:before {
+    display: block;
+}
+
+.cartoon-right-top span:nth-child(2) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.5));
+}
+
+.cartoon-right-top span:nth-child(3) {
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 17px;
+    top: 5px;
+    left: -5px;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    line-height: 17px;
+    background-color: #09bb07;
+}
+
+.cartoon-right-top span:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 1px;
+    display: block;
+    border-right: 4px solid #09bb07;
+    border-bottom: 4px solid transparent;
+}
+
+.cartoon-right-top a:nth-child(2) {
+    width: 146px;
+    color: #b2b2b2;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.cartoon-right-top a:nth-child(2):hover {
+    color: #09bb07;
+}
+
+.cartoon-right-top p {
+    margin-top: 8px;
+    color: #666666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 专题栏 */
+.topic .container {
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #333333;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.topic-title {
+    height: 62px;
+}
+
+.topic-title span {
+    font-size: 18px;
+    color: #b2b2b2;
+    line-height: 62px;
+}
+
+.topic-title span i {
+    font-size: 26px;
+    color: #09bb07;
+    margin-right: 10px;
+}
+
+
+.topic-title a:nth-child(2) {
+    float: right;
+    margin-top: 30px;
+    color: #666666;
+    font-size: 13px;
+}
+
+.topic-title a:nth-child(2):hover {
+    color: #02bc01;
+}
+
+.topic-title a:nth-child(2) i {
+    font-size: 13px;
 }
