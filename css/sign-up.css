@@ -1,0 +1,321 @@
+body {
+    background-color: #2b2a2a;
+}
+
+/* 顶部导航栏 */
+.topnav {
+    background-color: #333333;
+    height: 62px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topnav-left {
+    float: left;
+}
+
+.topnav-left > a:nth-child(1) {
+    float: left;
+    margin-top: 6px;
+}
+
+.topnav-left > ul:nth-child(2) {
+    float: left;
+    margin-left: 10px;
+}
+.topnav-left > ul:nth-child(2) > li {
+    float: left;
+}
+
+.topnav-left > ul:nth-child(2) > li > a {
+    float: left;
+    color: #b2b2b2;
+    line-height: 62px;
+    font-size: 16px;
+    margin-right: 40px;
+    padding: 0 3px;
+}
+
+.topnav-left > ul:nth-child(2) > li > a:hover {
+    color: #02bc01;
+} 
+
+.topnav-right {
+    position: relative;
+    float: right;
+    width: 290px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.topnav-right input {
+    float: left;
+    width: 288px;
+    height: 33px;
+    background-color: #444444;
+    border: 1px solid #2b2a2a;
+    font-size: 14px;
+    color: #999999;
+    border-radius: 6px;
+    padding: 6px 0px 6px 12px;
+    box-sizing: border-box;
+}
+
+.topnav-right input:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+input::-webkit-input-placeholder {
+    color: #999999;
+   /* 字体大小直接写样式即可 */
+}
+/*  Mozilla Firefox 4-18使用伪类 */
+input:-moz-placeholder {
+  color: #999999;
+}
+/* Mozilla Firefox 19+ 使用伪元素  */
+input::-moz-placeholder { 
+  color: #999999;
+}
+/* IE10使用伪类 */
+input:-ms-input-placeholder {
+  color: #999999;
+}
+
+.topnav-right a {
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 0px;
+    width: 33px;
+    height: 35px;
+    color: #5b665b;
+    line-height: 35px;
+    text-align: center;
+    /* background-color: #02bc01; */
+}
+
+.topnav-right a i.iconfont {
+    font-size: 24px;
+}
+
+/* 登录栏 */
+
+.signup-content {
+    width: 350px;
+    height: 537px;
+    margin: 150px auto;
+    background-color: #333333;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-title {
+    color: #666666;
+    font-size: 14px;
+}
+
+.signup-title img {
+    margin-top: 45px;
+    margin-bottom: 14px;
+}
+.signup-content input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 0px 12px;
+    color: #555555;
+}
+
+
+.signup-content input:nth-child(-n+5):focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.signup-username,
+.signup-password,
+.signup-password-sure,
+.signup-email {
+    display: block;
+    border: none;
+    margin: 0px auto;
+    width: 280px;
+    height: 35px;
+}
+
+.signup-username {
+    margin-top: 50px;
+}
+
+.signup-password,
+.signup-password-sure,
+.signup-email {
+    margin-top: 20px;
+}
+
+.signup-Vcode {
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 35px;
+}
+.signup-Vcode input {
+    float: left;
+    width: 140px;
+    height: 35px;
+}
+
+.signup-Vcode img {
+    float: right;
+    width: 70px;
+    height: 32px;
+}
+
+input.signup-button {
+    margin-top: 20px;
+    width: 280px;
+    height: 35px;
+    background-color: #09bb07;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+}
+
+input.signup-button:hover {
+    background-color: #09af07;
+    border-color: #09af07;
+}
+
+.signup-content > p {
+    margin-top: 24px;
+}
+
+.signup-content:last-child a {
+    color: #666666;
+    font-size: 14px;
+}
+
+.signup-content:last-child a:hover {
+    color: #09bb07;
+}
+
+/* 底部 */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.footer p:nth-child(3) {
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #b2b2b2;
+}
+
+.footer a:hover {
+    color: #09bb07;
+}
+
+/* 侧边栏 */
+aside {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 999;
+}
+
+.aside-content {
+    width: 50px;
+    height: 50px;
+    background-color: #333333;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aside-content > a {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.aside-content .iconfont {
+    color: #b2b2b2;
+    font-size: 21px;
+}
+
+.aside-content > a:hover .iconfont {
+    color: #02bc01;
+}
+
+.aside-content:nth-child(2) .iconfont {
+    font-size: 23px;
+}
+
+.aside-content:nth-child(3) .iconfont,
+.aside-content:nth-child(4) .iconfont {
+    font-size: 19px;
+}
+
+.aside-content:nth-child(3) {
+    position: relative;
+}
+
+.aside-content:nth-child(3):hover .aside-history {
+    display: block;
+}
+
+.aside-history {
+    position: absolute;
+    display: none;
+    min-height: 290px;
+    width: 200px;
+    background-color: #333333;
+    top: -120px;
+    right: 65px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aside-history:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 136px;
+    left: 200px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid #333333; 
+    border-right: 10px solid transparent; 
+    border-top: 10px solid transparent; 
+    border-bottom: 10px solid transparent; 
+}
+
+
+
+.aside-history h5 {
+    font-weight: normal;
+    color: #b2b2b2;
+    text-align: left;
+    line-height: 1.5em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #2b2a2a;
+    color: #666666;
+    font-size: 14px;
+}
+
+.aside-history li {
+    color: #999999;
+    font-size: 14px;
+    text-align: left;
+    line-height: 32px;
+}
