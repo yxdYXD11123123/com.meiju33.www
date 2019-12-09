@@ -119,6 +119,11 @@ input:-ms-input-placeholder {
     margin-top: 45px;
     margin-bottom: 14px;
 }
+
+.login-title img:hover {
+    transform: rotateX(360deg);
+    transition: all 2s linear;
+}
 .login-content input {
     border: 1px solid #ccc;
     border-radius: 4px;
