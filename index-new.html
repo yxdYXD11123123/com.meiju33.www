@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人人美剧-新版</title>
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common-new.css">
+    <link rel="stylesheet" href="./css/index-new.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./lib/bootstrap-3.3.7-dist/jquery.min.js"></script>
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部搜索 -->
+    <div class="top">
+        <div class="container">
+            <div class="top-logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="top-search">
+                <div>
+                    <input type="text" placeholder="请输入影片名称">
+                    <button>搜索</button>
+                </div>
+                <div>
+                    <i class="iconfont">&#xe60d;</i>
+                    <span>
+                        <h5>观看历史</h5>
+                        <ul>
+                            <li>
+                                <a href="#">真相大白第一季</a>
+                            </li>
+                            <li>
+                                <a href="#">歌舞青春音乐剧第一季</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container">
+            <ul class="nav-ul">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">科幻动作</a>
+                </li>
+                <li>
+                    <a href="#">悬疑烧脑</a>
+                </li>
+                <li>
+                    <a href="#">喜剧青春</a>
+                </li>
+                <li>
+                    <a href="#">精英文艺</a>
+                </li>
+                <li>
+                    <a href="#">动漫卡通</a>
+                </li>
+                <li>
+                    <a href="#">综艺选秀</a>
+                </li>
+                <li>
+                    <a href="#">韩剧影院</a>
+                </li>
+                <li>
+                    <a href="#">口袋小说</a>
+                </li>
+                <li>
+                    <a href="#">返回老版</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">更多内容</a>
+
+                    <ul class="dropdown-menu pull-right nav-more" style="min-width: 100px;" role="menu"
+                        aria-labelledby="dropdownMenu1">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">云盘教程</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">留言求片</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">站长采集</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 通告栏 -->
+    <div class="notice">
+        <div class="container">
+            <h5>说明:关于近期部分用户反馈在线播放卡顿的情况,想在这里说明一下原因:"本站的美剧资源是编辑们收集自资源网,美剧...<button data-toggle="modal"
+                    data-target="#myModal">[点击查看]</button></h5>
+            <!-- 模态框（Modal） -->
+            <div class="modal fade notice-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">信息</h4>
+                        </div>
+                        <div class="modal-body">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于近期部分用户反馈在线播放卡顿的情况,想在这里说明一下原因:"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本站的美剧资源是编辑们收集自资源网,美剧在线播放受大陆线路,资源网带宽,以及用户手机Wifi网速等诸多因素限制导致卡顿,还有最重要的一点是我们网站运营经费有限,无法媲美奇异优酷等大型上市公司无法自己存储美剧提供在线播放<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里强烈建议追求播放速度的朋友,<a
+                                href="#">
+                                <font color="red">☞点击这里参照本站教程☜</font>
+                            </a>,把本站的下载地址通过百度云盘离线功能,下载到手机云盘APP进行在线观看<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感谢您一路陪伴,我们共同成长！
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">查看教程</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+        </div>
+    </div>
+    <!-- 主体栏 -->
+    <main>
+        <div class="container">
+            <div class="header-tab">
+
+                <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 0px;">
+                    <li class="active"><a href="#tabb1" data-toggle="tab">科幻动作</a></li>
+                    <li><a href="#tabb2" data-toggle="tab">悬疑烧脑</a></li>
+                    <li>
+                        <a href="#tabb3" data-toggle="tab">喜剧青春</a>
+                    </li>
+                    <li>
+                        <a href="#tabb4" data-toggle="tab">精英文艺</a>
+                    </li>
+                    <li>
+                        <a href="#tabb5" data-toggle="tab">动漫卡通</a>
+                    </li>
+
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade  in active" id="tabb1">
+                        <div id="tab_1" class="tab">
+                            <div class="main-tab1-top">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./upload/index_new_main_1.jpg" alt="">
+                                            <span>第01集</span>
+                                        </a>
+                                        <h5><a href="#">德古拉英版第一季</a></h5>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./upload/index_new_main_2.jpg" alt="">
+                                            <span></span>
+                                        </a>
+                                        <h5><a href="#">德古拉英版第一季</a></h5>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./upload/index_new_main_3.jpg" alt="">
+                                            <span></span>
+                                        </a>
+                                        <h5><a href="#">德古拉英版第一季</a></h5>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./upload/index_new_main_4.jpg" alt="">
+                                            <span></span>
+                                        </a>
+                                        <h5><a href="#">德古拉英版第一季</a></h5>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./upload/index_new_main_5.jpg" alt="">
+                                            <span></span>
+                                        </a>
+                                        <h5><a href="#">德古拉英版第一季</a></h5>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./upload/index_new_main_6.jpg" alt="">
+                                            <span></span>
+                                        </a>
+                                        <h5><a href="#">德古拉英版第一季</a></h5>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./upload/index_new_main_7.jpg" alt="">
+                                            <span></span>
+                                        </a>
+                                        <h5><a href="#">德古拉英版第一季</a></h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabb2">
+                        <div id="tab_2" class="tab">
+                            内容2
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabb3">
+                        <div id="tab_3" class="tab">
+                            内容3
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabb4">
+                        <div id="tab_4" class="tab">
+                            内容4
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabb5">
+                        <div id="tab_5" class="tab">
+                            内容5
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script>
+
+
+        $(function () {
+            tab_floatingSwitch('#myTab >  li', '#myTabContent > div');
+        });
+
+        /* tab页自动切换 */
+        function tab_floatingSwitch(id_1, id_2) {
+            // tab页自动切换
+            $(id_1).hover(function () { // 悬停
+                $(id_1).removeClass("active"); // 移除所有 li 样式
+                $(this).addClass("active"); // 给自己添加 li 样式		
+
+                $(id_2).removeClass("in active"); // 移除所有tab样式
+
+                var href = $(this).children().attr("href");
+                $(href).addClass(" in active");		 // 给自己添加 tab样式
+            });
+        }
+
+    </script>
+</body>
+
+</html>
