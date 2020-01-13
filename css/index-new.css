@@ -189,6 +189,14 @@ nav .container > ul {
   border-bottom: 4px solid transparent;
 }
 
+.nav-ul .dropdown-menu {
+  padding: 0px;
+}
+
+.nav-ul .dropdown-menu > li > a:focus, .nav-ul .dropdown-menu > li > a:hover {
+  background-color: white;
+}
+
 .nav-more {
   background-color: #1E9FFF;
   border-radius: 0;
@@ -215,10 +223,15 @@ nav .container > ul {
 }
 
 .notice h5 {
-  line-height: 32px;
+  line-height: 20px;
   color: #181818;
   font-size: 20px;
   font-weight: 700;
+  border-left: 3px solid #1E9FFF;
+  padding-left: 20px;
+  margin-left: -20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .notice h5 > button {
